@@ -1,0 +1,147 @@
+/*
+.container{
+    background-color: yellow;
+    width:500px;
+    height: 500px
+}
+.window{
+    background-color: darkcyan;
+    width: 400px;
+    height: 100px;
+    margin: 10px 20px;
+    
+}
+button{
+
+}*/
+body {
+    background-color: #000;
+}
+.container {
+    background-color: steelblue;
+    width: 350px;
+    height: 510px;
+    margin: auto;
+    border-radius: 10px;
+}
+.display{/*tiene mayor especificidad y gana*/
+    background-color: goldenrod;
+    width: 320px;
+    margin: auto;
+    top: 15px;
+    font-size: 30px;
+    line-height: normal;
+    /* text-align: right; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.number:active{
+    font-size: 35px;
+    background-color: darkcyan;
+    border: 3px solid black;
+}
+.operator:active{
+    font-size: 35px;
+    background-color: lawngreen;
+    border: 3px solid black;
+}
+div div{
+    font-size: 25px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color:slategray;
+    box-sizing: border-box;
+    border: 1px solid black;
+    /*border-radius: 10%;*/
+    position: relative
+}
+#clear{
+    top: 15px;
+    left: 15px
+}
+#div{
+   left: 95px;
+   top: -65px
+}
+#mul{
+    left: 175px;
+    bottom: 145px;
+}
+#del{
+    left: 255px;
+    bottom: 225px
+}
+#n7{
+    left:15px;
+    bottom: 225px
+}
+#n8{
+    left:95px;
+    bottom: 305px
+}
+#n9{
+    left:175px;
+    bottom: 385px
+}
+#res{
+    left:255px;
+    bottom: 465px
+}
+#n4{
+    left:15px;
+    bottom: 465px
+}
+#n5{
+    left: 95px;
+    bottom: 545px
+}
+#n6{
+    left: 175px;
+    bottom: 625px
+}
+#sum{
+    height: 160px;/*esto hara q para posicionar las cajas inferiores se tenga q agregar 80px more,
+    por q ahora esta caja ocupa 160px en height OJAZO*/
+    line-height: 160px;
+    left: 255px;
+    bottom: 705px;
+    
+}
+#n1{
+    left: 15px;
+    bottom: 785px
+    /*bottom: 705px antes*/
+}
+#n2{
+    left: 95px;
+    bottom: 865px
+    /*bottom: 785px*/
+}
+#n3{
+    left: 175px;
+    bottom: 945px
+    /*bottom: 865px*/
+}
+#n0{
+    left: 15px;
+    bottom: 945px;
+    /*bottom: 865px*/
+    border-bottom-left-radius: 10px;
+}
+#dot{
+    left: 95px;
+    bottom: 1025px;
+    /*bottom: 945px*/
+}
+#equal{
+    width: 160px;
+    left: 175px;
+    bottom: 1105px;
+    /*bottom: 1025px;*/ 
+    border-bottom-right-radius: 10px;
+}
